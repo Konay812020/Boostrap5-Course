@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./assets/libs/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css"
+    />
+    <title>Responsive Untitles With JS</title>
+  </head>
+  <body>
+    <div class="container bg-info my-3">
+      <p id="result" class="text-center text-warning"></p>
+    </div>
+    <div class="continer-fluid bg-primary">
+      <div class="container bg-secondary my-3 col-xxl-5">Extra Extra large</div>
+      <div class="container bg-success my-3 col-xl-3">Extra large</div>
+      <div class="container bg-danger my-3 col-lg-5">Large</div>
+      <div class="container bg-warning my-3 col-md-2">Medium</div>
+      <div class="container bg-info my-3 col-sm-6">Small</div>
+      <div class="container bg-dark text-white mb-3 col-xs-1">Extra Small</div>
+    </div>
+
+    <script src="./assets/libs/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+      var result = document.getElementById("result");
+      var r_width = window.innerWidth;
+      result.innerHTML = r_width + "px";
+      window.addEventListener("resize", update, false);
+      function update() {
+        r_width = window.innerWidth;
+        // console.log(r_width);
+        result.innerText = r_width + "px";
+      }
+    </script>
+  </body>
+</html>
