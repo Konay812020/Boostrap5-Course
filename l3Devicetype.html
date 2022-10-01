@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="./assets/libs/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css"
+    />
+    <title>Boostrap Foundation</title>
+  </head>
+  <body>
+    <!--      *5 boostrap size *
+    1.xl => extra large size => large desktops,1200px> 
+    2.lg => large size       => 992px and up, < 1199px 
+    3.md => medium size      => 768px and up, < 961px,tablets 
+    4.sm => small size       => 576px and up, < 767px ,landscape phones
+    5.xs => extra small size => portrait phones, less than 575px -->
+
+    <div class="container xl-col-5 bg-primary">Extra Large size</div>
+    <div class="container lg-col-7 bg-secondary hidden-md-down">Large size</div>
+    <div class="container md-col-8 bg-success hidden-sm-down">Medium size</div>
+    <div class="container sm-col-10 bg-reverse hidden-xl-down">Small size</div>
+    <div class="container bg-info hidden-sm-up">Extra Small size</div>
+
+    <script src="./assets/libs/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/js/bootstrap.min.js"></script>
+  </body>
+</html>
